@@ -19,7 +19,11 @@ export default function Button({
   const baseStyles = 'inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
   
   const variantStyles = {
-    primary: 'bg-[#C52233] hover:bg-[#A41D2C] text-white focus:ring-[#C52233]/50',
+    // Royal Gold primary button
+    // Uses the brand colour `gold` from Tailwind theme (see tailwind.config.ts).
+    // On hover we manually specify a slightly darker shade for good contrast.
+    primary:
+      'bg-gold hover:bg-[#B68F30] text-white focus:ring-gold/50',
     secondary: 'bg-gray-100 hover:bg-gray-200 text-gray-800 focus:ring-gray-300'
   };
 

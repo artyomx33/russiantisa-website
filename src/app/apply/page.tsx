@@ -165,12 +165,12 @@ export default function ApplyPage() {
                       name="privacy"
                       type="checkbox"
                       required
-                      className="h-4 w-4 text-[#C52233] focus:ring-[#C52233] border-gray-300 rounded"
+                      className="h-4 w-4 text-gold focus:ring-gold border-gray-300 rounded"
                     />
                   </div>
                   <div className="ml-3 text-sm">
                     <label htmlFor="privacy" className="font-medium text-gray-700">
-                      Я согласен с <a href="#" className="text-[#C52233] underline">политикой конфиденциальности</a> *
+                      Я согласен с <a href="#" className="text-gold underline">политикой конфиденциальности</a> *
                     </label>
                   </div>
                 </div>

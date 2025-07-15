@@ -31,7 +31,7 @@ export default function SectionHeader({
       )}
       
       <div className={twMerge(
-        'h-1 bg-[#C52233] w-16 mt-4',
+        'h-1 bg-gold w-16 mt-4',
         centered ? 'mx-auto' : ''
       )} />
     </div>

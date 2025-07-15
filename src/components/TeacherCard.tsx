@@ -22,7 +22,7 @@ export default function TeacherCard({
       'flex flex-col items-center p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-300',
       className
     )}>
-      <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-2 border-[#C52233]">
+      <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-2 border-gold">
         <Image 
           src={image} 
           alt={`${name} photo`} 
@@ -33,7 +33,7 @@ export default function TeacherCard({
       </div>
       
       <h3 className="text-xl font-bold mb-1 text-center">{name}</h3>
-      {title && <p className="text-[#C52233] font-medium mb-2 text-center">{title}</p>}
+      {title && <p className="text-gold font-medium mb-2 text-center">{title}</p>}
       <p className="text-gray-600 text-center">{bio}</p>
     </div>
   );

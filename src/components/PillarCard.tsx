@@ -31,7 +31,7 @@ export default function PillarCard({
           />
         </div>
       ) : (
-        <div className="w-16 h-16 mb-4 text-[#C52233]">
+        <div className="w-16 h-16 mb-4 text-gold">
           {icon}
         </div>
       )}

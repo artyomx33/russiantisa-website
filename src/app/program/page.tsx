@@ -31,7 +31,7 @@ export default function ProgramPage() {
             {/* Junior Group */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
-                <h3 className="text-2xl font-bold mb-4 text-[#C52233]">Младшая группа (3-6 лет)</h3>
+                <h3 className="text-2xl font-bold mb-4 text-gold">Младшая группа (3-6 лет)</h3>
                 <p className="text-gray-700 mb-4">
                   Для самых маленьких учеников мы создаем игровую среду, где изучение языка 
                   происходит естественно и увлекательно. Основной фокус — на развитии речи, 
@@ -39,30 +39,30 @@ export default function ProgramPage() {
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Развитие речи через игры, песни и стихи</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Знакомство с буквами и звуками русского языка</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Русские народные сказки и детская литература</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Творческие занятия: рисование, лепка, аппликация</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Знакомство с русскими праздниками и традициями</span>
                   </li>
                 </ul>
               </div>
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden order-1 md:order-2">
                 <Image
-                  src="https://placehold.co/800x600/C52233/FFFFFF/png?text=Junior+Group"
+                  src="https://placehold.co/800x600/C9A83D/FFFFFF/png?text=Junior+Group"
                   alt="Младшая группа (3-6 лет)"
                   fill
                   className="object-cover"
@@ -74,14 +74,14 @@ export default function ProgramPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden">
                 <Image
-                  src="https://placehold.co/800x600/C52233/FFFFFF/png?text=Middle+Group"
+                  src="https://placehold.co/800x600/C9A83D/FFFFFF/png?text=Middle+Group"
                   alt="Средняя группа (7-9 лет)"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-[#C52233]">Средняя группа (7-9 лет)</h3>
+                <h3 className="text-2xl font-bold mb-4 text-gold">Средняя группа (7-9 лет)</h3>
                 <p className="text-gray-700 mb-4">
                   Для детей, которые уже знакомы с основами русского языка, мы предлагаем более 
                   структурированную программу, направленную на развитие чтения, письма и 
@@ -89,23 +89,23 @@ export default function ProgramPage() {
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Чтение и анализ детской литературы</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Развитие письменной речи и грамматики</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Проектная деятельность: создание книг, презентаций</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Основы русской истории и географии</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Командные игры и дискуссии на русском языке</span>
                   </li>
                 </ul>
@@ -115,7 +115,7 @@ export default function ProgramPage() {
             {/* Senior Group */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1">
-                <h3 className="text-2xl font-bold mb-4 text-[#C52233]">Старшая группа (10-12 лет)</h3>
+                <h3 className="text-2xl font-bold mb-4 text-gold">Старшая группа (10-12 лет)</h3>
                 <p className="text-gray-700 mb-4">
                   Для старших детей программа фокусируется на углубленном изучении языка, 
                   литературы и культуры, а также на развитии критического мышления и 
@@ -123,30 +123,30 @@ export default function ProgramPage() {
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Углубленное изучение грамматики и стилистики</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Русская классическая и современная литература</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Дебаты и презентации на русском языке</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Исследовательские проекты по русской культуре</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#C52233] mr-2">•</span>
+                    <span className="text-gold mr-2">•</span>
                     <span>Подготовка к языковым сертификатам (по желанию)</span>
                   </li>
                 </ul>
               </div>
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden order-1 md:order-2">
                 <Image
-                  src="https://placehold.co/800x600/C52233/FFFFFF/png?text=Senior+Group"
+                  src="https://placehold.co/800x600/C9A83D/FFFFFF/png?text=Senior+Group"
                   alt="Старшая группа (10-12 лет)"
                   fill
                   className="object-cover"
@@ -177,7 +177,7 @@ export default function ProgramPage() {
                   <p className="text-gray-700">Приветствие и утренний круг</p>
                 </div>
                 <div className="md:w-12 md:flex md:justify-center md:items-center relative">
-                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-[#C52233] text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
+                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-gold text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
                     1
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function ProgramPage() {
                   <p className="text-gray-700">Основной учебный блок</p>
                 </div>
                 <div className="md:w-12 md:flex md:justify-center md:items-center relative">
-                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-[#C52233] text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
+                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-gold text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
                     2
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function ProgramPage() {
                   <p className="text-gray-700">Перерыв и перекус</p>
                 </div>
                 <div className="md:w-12 md:flex md:justify-center md:items-center relative">
-                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-[#C52233] text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
+                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-gold text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
                     3
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function ProgramPage() {
                   <p className="text-gray-700">Творческий блок</p>
                 </div>
                 <div className="md:w-12 md:flex md:justify-center md:items-center relative">
-                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-[#C52233] text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
+                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-gold text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
                     4
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function ProgramPage() {
                   <p className="text-gray-700">Подведение итогов</p>
                 </div>
                 <div className="md:w-12 md:flex md:justify-center md:items-center relative">
-                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-[#C52233] text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
+                  <div className="hidden md:block absolute w-12 h-12 rounded-full bg-gold text-white flex items-center justify-center transform -translate-x-1/2 text-xl font-bold">
                     5
                   </div>
                 </div>
@@ -281,7 +281,7 @@ export default function ProgramPage() {
             {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
               <div key={num} className="relative h-48 rounded-lg overflow-hidden">
                 <Image
-                  src={`https://placehold.co/600x400/C52233/FFFFFF/png?text=Gallery+${num}`}
+                  src={`https://placehold.co/600x400/C9A83D/FFFFFF/png?text=Gallery+${num}`}
                   alt={`Фото из галереи ${num}`}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -297,7 +297,7 @@ export default function ProgramPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 px-4 bg-[#C52233] text-white">
+      <section className="py-12 px-4 bg-gold text-white">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Готовы присоединиться к нам?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
