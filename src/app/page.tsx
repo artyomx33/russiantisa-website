@@ -47,7 +47,7 @@ export default function Home() {
                 Русская школа TISA — это место, где дети сохраняют связь с русским языком, культурой и традициями через современное образование и творческий подход.
               </p>
               <blockquote className="border-l-4 border-gold pl-4 italic text-gray-700 mb-6">
-                "Язык — это ключ к идентичности, связь с корнями и инвестиция в будущее наших детей."
+                &ldquo;Язык — это ключ к идентичности, связь с корнями и инвестиция в будущее наших детей.&rdquo;
                 <footer className="text-sm mt-2 text-gray-500">— Карина Медведева, сооснователь</footer>
               </blockquote>
               <p className="text-lg text-gray-700">
@@ -221,7 +221,7 @@ export default function Home() {
             <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
-                  "
+                  &ldquo;
                 </div>
                 <div>
                   <h4 className="font-bold">Семья Ивановых</h4>
@@ -229,14 +229,14 @@ export default function Home() {
                 </div>
               </div>
               <blockquote className="text-gray-700 italic">
-                "Мы видим, как наш сын с радостью бежит в школу каждое воскресенье!"
+                &ldquo;Мы видим, как наш сын с радостью бежит в школу каждое воскресенье!&rdquo;
               </blockquote>
             </div>
             
             <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
-                  "
+                  &ldquo;
                 </div>
                 <div>
                   <h4 className="font-bold">Елена Петрова</h4>
@@ -244,7 +244,7 @@ export default function Home() {
                 </div>
               </div>
               <blockquote className="text-gray-700 italic">
-                "Karina and the team create a magical space — not just lessons, but memories."
+                &ldquo;Karina and the team create a magical space — not just lessons, but memories.&rdquo;
               </blockquote>
             </div>
           </div>

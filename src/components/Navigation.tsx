@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -10,9 +9,6 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-
-  // Check if we're on the homepage
-  const isHomePage = pathname === '/';
 
   // Handle scroll events to change navigation appearance
   useEffect(() => {
