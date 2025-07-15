@@ -72,12 +72,12 @@ export default function ApplyPage() {
                     height="220"
                     loading="lazy"
                     className="rounded-md border-0"
-                  ></iframe>
+                  />
                 </div>
               </div>
             </div>
             
-            {/* Application Form */}
+            {/* Application Form or Confirmation Message */}
             <div className="md:col-span-2">
               {submitted ? (
                 <div className="bg-gray-50 p-8 rounded-lg text-center">
@@ -87,138 +87,137 @@ export default function ApplyPage() {
                   </p>
                 </div>
               ) : (
-              <form
-                className="space-y-6"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubmitted(true);
-                }}
-              >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Parent Name */}
+                <form
+                  className="space-y-6"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    setSubmitted(true);
+                  }}
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Parent Name */}
+                    <div>
+                      <label htmlFor="parentName" className="block text-sm font-medium text-gray-700 mb-1">
+                        Имя родителя *
+                      </label>
+                      <input
+                        type="text"
+                        id="parentName"
+                        name="parentName"
+                        required
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                        placeholder="Иван Иванов"
+                      />
+                    </div>
+                    
+                    {/* Child Name */}
+                    <div>
+                      <label htmlFor="childName" className="block text-sm font-medium text-gray-700 mb-1">
+                        Имя ребенка *
+                      </label>
+                      <input
+                        type="text"
+                        id="childName"
+                        name="childName"
+                        required
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                        placeholder="Мария Иванова"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Child Age */}
+                    <div>
+                      <label htmlFor="childAge" className="block text-sm font-medium text-gray-700 mb-1">
+                        Возраст ребенка *
+                      </label>
+                      <input
+                        type="number"
+                        id="childAge"
+                        name="childAge"
+                        min="3"
+                        max="12"
+                        required
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                        placeholder="7"
+                      />
+                    </div>
+                    
+                    {/* Email */}
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                        Email *
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                        placeholder="ivan@example.com"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Phone */}
                   <div>
-                    <label htmlFor="parentName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Имя родителя *
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                      Телефон *
                     </label>
                     <input
-                      type="text"
-                      id="parentName"
-                      name="parentName"
+                      type="tel"
+                      id="phone"
+                      name="phone"
                       required
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="Иван Иванов"
+                      placeholder="+31 6 12345678"
                     />
                   </div>
                   
-                  {/* Child Name */}
+                  {/* Message */}
                   <div>
-                    <label htmlFor="childName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Имя ребенка *
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                      Сообщение
                     </label>
-                    <input
-                      type="text"
-                      id="childName"
-                      name="childName"
-                      required
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={5}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="Мария Иванова"
-                    />
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Child Age */}
-                  <div>
-                    <label htmlFor="childAge" className="block text-sm font-medium text-gray-700 mb-1">
-                      Возраст ребенка *
-                    </label>
-                    <input
-                      type="number"
-                      id="childAge"
-                      name="childAge"
-                      min="3"
-                      max="12"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="7"
-                    />
+                      placeholder="Расскажите нам о вашем ребенке и что вы ожидаете от занятий"
+                    ></textarea>
                   </div>
                   
-                  {/* Email */}
+                  {/* Privacy Policy */}
+                  <div className="flex items-start">
+                    <div className="flex items-center h-5">
+                      <input
+                        id="privacy"
+                        name="privacy"
+                        type="checkbox"
+                        required
+                        className="h-4 w-4 text-gold focus:ring-gold border-gray-300 rounded"
+                      />
+                    </div>
+                    <div className="ml-3 text-sm">
+                      <label htmlFor="privacy" className="font-medium text-gray-700">
+                        Я согласен с <a href="#" className="text-gold underline">политикой конфиденциальности</a> *
+                      </label>
+                    </div>
+                  </div>
+                  
+                  {/* Submit Button */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="ivan@example.com"
-                    />
+                    <Button type="submit" fullWidth>
+                      Отправить заявку
+                    </Button>
+                    <p className="text-sm text-gray-500 mt-4">
+                      * Обязательные поля
+                    </p>
                   </div>
-                </div>
-                
-                {/* Phone */}
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Телефон *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C52233]"
-                    placeholder="+31 6 12345678"
-                  />
-                </div>
-                
-                {/* Message */}
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Сообщение
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C52233]"
-                    placeholder="Расскажите нам о вашем ребенке и что вы ожидаете от занятий"
-                  ></textarea>
-                </div>
-                
-                {/* Privacy Policy */}
-                <div className="flex items-start">
-                  <div className="flex items-center h-5">
-                    <input
-                      id="privacy"
-                      name="privacy"
-                      type="checkbox"
-                      required
-                      className="h-4 w-4 text-gold focus:ring-gold border-gray-300 rounded"
-                    />
-                  </div>
-                  <div className="ml-3 text-sm">
-                    <label htmlFor="privacy" className="font-medium text-gray-700">
-                      Я согласен с <a href="#" className="text-gold underline">политикой конфиденциальности</a> *
-                    </label>
-                  </div>
-                </div>
-                
+                </form>
               )}
-                {/* Submit Button */}
-                <div>
-                  <Button type="submit" fullWidth>
-                    Отправить заявку
-                  </Button>
-                </div>
-                
-                <p className="text-sm text-gray-500 mt-4">
-                  * Обязательные поля
-                </p>
-              </form>
             </div>
           </div>
         </div>

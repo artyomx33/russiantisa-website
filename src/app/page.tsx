@@ -113,8 +113,8 @@ export default function Home() {
             <TeacherCard
               image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Karina"
               name="Карина Медведева"
-              title="Сооснователь"
-              bio="Вдохновитель проекта, публичный спикер. Определяет видение школы, проводит выступления и организует праздники."
+              title="Сооснователь и идейный вдохновитель"
+              bio="🇷🇺 Карина Медведева — сердце и голос нашей школы. Она не только курирует образовательное направление и театральные проекты, но и ведёт ключевые мероприятия, вдохновляя детей и родителей. Её энергия, любовь к языку и современный подход к обучению делают занятия живыми, а школу — настоящим сообществом."
             />
           </div>
         </div>
@@ -246,136 +246,6 @@ export default function Home() {
               <blockquote className="text-gray-700 italic">
                 "Karina and the team create a magical space — not just lessons, but memories."
               </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- removed Apply & CTA sections as they belong to /apply page now --- */}
-                    <h4 className="font-medium text-gold">Телефон</h4>
-                    <p className="mt-1">+31 6 12345678</p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-medium text-gold">Время работы</h4>
-                    <p className="mt-1">
-                      Воскресенье: 9:30 - 17:30<br />
-                      Административные вопросы:<br />
-                      Пн-Пт: 9:00 - 17:00
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Application Form */}
-            <div className="md:col-span-2">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Parent Name */}
-                  <div>
-                    <label htmlFor="parentName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Имя родителя *
-                    </label>
-                    <input
-                      type="text"
-                      id="parentName"
-                      name="parentName"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="Иван Иванов"
-                    />
-                  </div>
-                  
-                  {/* Child Name */}
-                  <div>
-                    <label htmlFor="childName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Имя ребенка *
-                    </label>
-                    <input
-                      type="text"
-                      id="childName"
-                      name="childName"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="Мария Иванова"
-                    />
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Child Age */}
-                  <div>
-                    <label htmlFor="childAge" className="block text-sm font-medium text-gray-700 mb-1">
-                      Возраст ребенка *
-                    </label>
-                    <input
-                      type="number"
-                      id="childAge"
-                      name="childAge"
-                      min="3"
-                      max="12"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="7"
-                    />
-                  </div>
-                  
-                  {/* Email */}
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="ivan@example.com"
-                    />
-                  </div>
-                </div>
-                
-                {/* Phone */}
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Телефон *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                    placeholder="+31 6 12345678"
-                  />
-                </div>
-                
-                {/* Message */}
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Сообщение
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
-                    placeholder="Расскажите нам о вашем ребенке и что вы ожидаете от занятий"
-                  ></textarea>
-                </div>
-                
-                {/* Submit Button */}
-                <div>
-                  <Button type="submit" fullWidth>
-                    Отправить заявку
-                  </Button>
-                  <p className="text-sm text-gray-600 mt-2">
-                    Мы свяжемся с вами в течение 24 часов.
-                  </p>
-                </div>
-              </form>
             </div>
           </div>
         </div>
