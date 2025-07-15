@@ -101,98 +101,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Программа обучения Section */}
-      <section id="program" className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <SectionHeader 
-            title="Программа обучения"
-            subtitle="Образовательная программа для разных возрастных групп"
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-gold">Младшая группа (3-6 лет)</h3>
-              <p className="text-gray-700 mb-4">
-                Игровое погружение в язык, развитие речи, знакомство с буквами и звуками русского языка через сказки и творчество.
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-gold">Средняя группа (7-9 лет)</h3>
-              <p className="text-gray-700 mb-4">
-                Чтение и анализ детской литературы, развитие письменной речи, проектная деятельность и командные игры.
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-gold">Старшая группа (10-12 лет)</h3>
-              <p className="text-gray-700 mb-4">
-                Углубленное изучение грамматики, литература, дебаты и презентации, исследовательские проекты по русской культуре.
-              </p>
-            </div>
-          </div>
-          
-          <div className="mt-12 bg-gray-50 p-8 rounded-lg shadow-sm">
-            <h3 className="text-xl font-bold mb-4">Праздники и выступления</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="p-4 bg-white rounded-lg">
-                <h4 className="font-bold mb-2">Октябрь</h4>
-                <p>Осенний спектакль</p>
-              </div>
-              <div className="p-4 bg-white rounded-lg">
-                <h4 className="font-bold mb-2">Декабрь</h4>
-                <p>Новогодний праздник</p>
-              </div>
-              <div className="p-4 bg-white rounded-lg">
-                <h4 className="font-bold mb-2">Апрель</h4>
-                <p>Весенний концерт</p>
-              </div>
-              <div className="p-4 bg-white rounded-lg">
-                <h4 className="font-bold mb-2">Июнь</h4>
-                <p>Выпускной праздник</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center mt-8">
-            <Button variant="secondary">Узнать больше о программе</Button>
-          </div>
-        </div>
-      </section>
-
       {/* Команда Section */}
       <section id="team" className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <SectionHeader 
-            title="Команда"
-            subtitle="Познакомьтесь с командой профессионалов, которые делают Russian TISA особенной"
+            title="Карина Медведева"
+            subtitle="Сооснователь и вдохновитель Russian TISA"
           />
           
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-12 flex justify-center">
             <TeacherCard
               image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Karina"
               name="Карина Медведева"
               title="Сооснователь"
               bio="Вдохновитель проекта, публичный спикер. Определяет видение школы, проводит выступления и организует праздники."
             />
-            
-            <TeacherCard
-              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Ekaterina"
-              name="Екатерина"
-              title="Директор школы"
-              bio="Руководит повседневной работой школы и образовательным процессом. Профессиональный педагог с многолетним опытом."
-            />
-            
-            <TeacherCard
-              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Maria"
-              name="Мария Петрова"
-              title="Преподаватель"
-              bio="Опытный педагог русского языка и литературы. Работает с детьми разных возрастов, создает увлекательные уроки."
-            />
-          </div>
-          
-          <div className="text-center mt-8">
-            <Button variant="secondary">Познакомиться со всей командой</Button>
           </div>
         </div>
       </section>
@@ -286,33 +209,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Галерея Section */}
-      <section id="gallery" className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <SectionHeader 
-            title="Галерея"
-            subtitle="Моменты из жизни нашей школы"
-          />
-          
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-              <div key={num} className="relative h-48 rounded-lg overflow-hidden">
-                <Image
-                  src={`https://placehold.co/600x400/C9A83D/FFFFFF/png?text=Gallery+${num}`}
-                  alt={`Фото из галереи ${num}`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-8">
-            <Button variant="secondary">Смотреть больше фотографий</Button>
-          </div>
-        </div>
-      </section>
-
       {/* Отзывы Section */}
       <section id="testimonials" className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
@@ -355,72 +251,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Вопросы и ответы Section */}
-      <section id="faq" className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <SectionHeader 
-            title="Вопросы и ответы"
-            subtitle="Ответы на часто задаваемые вопросы"
-          />
-          
-          <div className="mt-12 space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold mb-2">Нужно ли ребенку знать русский язык для начала занятий?</h3>
-              <p className="text-gray-700">
-                Нет, мы принимаем детей с любым уровнем владения русским языком. Наша методика 
-                адаптируется под индивидуальные потребности каждого ребенка.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold mb-2">Как часто проходят занятия?</h3>
-              <p className="text-gray-700">
-                Занятия проходят один раз в неделю по воскресеньям. Продолжительность занятия 
-                зависит от возрастной группы и составляет от 1,5 до 2 часов.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold mb-2">Будут ли спектакли?</h3>
-              <p className="text-gray-700">
-                Да! Каждый семестр у нас проходят выступления. В октябре — Осенний спектакль, в декабре — Новогодний праздник, 
-                в апреле — Весенний концерт, а в июне — Выпускной праздник.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Записаться Section */}
-      <section id="apply" className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <SectionHeader 
-            title="Записаться"
-            subtitle="Заполните форму, чтобы записать вашего ребенка в Russian TISA"
-          />
-          
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* Contact Details Block */}
-            <div className="md:col-span-1">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Контактная информация</h3>
-                
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-medium text-gold">Адрес</h4>
-                    <p className="mt-1">
-                      TISA Education Center<br />
-                      Hoofdstraat 123<br />
-                      2333 AB Leiden
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-medium text-gold">Email</h4>
-                    <p className="mt-1">info@russiantisa.nl</p>
-                  </div>
-                  
-                  <div>
+      {/* --- removed Apply & CTA sections as they belong to /apply page now --- */}
                     <h4 className="font-medium text-gold">Телефон</h4>
                     <p className="mt-1">+31 6 12345678</p>
                   </div>

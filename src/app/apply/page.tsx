@@ -1,10 +1,16 @@
-import React from 'react';
+/* eslint-disable react-hooks/rules-of-hooks */
+"use client";
+
+import React, { useState } from 'react';
 import SectionHeader from '@/components/SectionHeader';
 import Button from '@/components/Button';
 
 export default function ApplyPage() {
+  // show confirmation after form submit
+  const [submitted, setSubmitted] = useState(false);
+
   return (
-    <main className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative w-full bg-gray-50 py-16 px-4 md:py-24">
         <div className="container mx-auto max-w-6xl">
@@ -29,7 +35,7 @@ export default function ApplyPage() {
                 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium text-[#C52233]">Адрес</h4>
+                    <h4 className="font-medium text-gold">Адрес</h4>
                     <p className="mt-1">
                       TISA Education Center<br />
                       Hoofdstraat 123<br />
@@ -38,17 +44,17 @@ export default function ApplyPage() {
                   </div>
                   
                   <div>
-                    <h4 className="font-medium text-[#C52233]">Email</h4>
+                    <h4 className="font-medium text-gold">Email</h4>
                     <p className="mt-1">info@russiantisa.nl</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-medium text-[#C52233]">Телефон</h4>
+                    <h4 className="font-medium text-gold">Телефон</h4>
                     <p className="mt-1">+31 6 12345678</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-medium text-[#C52233]">Время работы</h4>
+                    <h4 className="font-medium text-gold">Время работы</h4>
                     <p className="mt-1">
                       Воскресенье: 9:30 - 17:30<br />
                       Административные вопросы:<br />
@@ -56,12 +62,38 @@ export default function ApplyPage() {
                     </p>
                   </div>
                 </div>
+
+                {/* Google Map */}
+                <div className="mt-6">
+                  <iframe
+                    title="TISA Location Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.1805882989885!2d4.4775!3d52.1505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sHoofdstraat%20123%2C%20Leiden!5e0!3m2!1sen!2snl!4v0000000000000"
+                    width="100%"
+                    height="220"
+                    loading="lazy"
+                    className="rounded-md border-0"
+                  ></iframe>
+                </div>
               </div>
             </div>
             
             {/* Application Form */}
             <div className="md:col-span-2">
-              <form className="space-y-6">
+              {submitted ? (
+                <div className="bg-gray-50 p-8 rounded-lg text-center">
+                  <h3 className="text-2xl font-bold mb-4 text-gold">Спасибо за вашу заявку!</h3>
+                  <p className="text-gray-700">
+                    Мы свяжемся с вами в течение 24 часов для подтверждения записи.
+                  </p>
+                </div>
+              ) : (
+              <form
+                className="space-y-6"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  setSubmitted(true);
+                }}
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Parent Name */}
                   <div>
@@ -73,7 +105,7 @@ export default function ApplyPage() {
                       id="parentName"
                       name="parentName"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C52233]"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
                       placeholder="Иван Иванов"
                     />
                   </div>
@@ -88,7 +120,7 @@ export default function ApplyPage() {
                       id="childName"
                       name="childName"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C52233]"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
                       placeholder="Мария Иванова"
                     />
                   </div>
@@ -107,7 +139,7 @@ export default function ApplyPage() {
                       min="3"
                       max="12"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C52233]"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
                       placeholder="7"
                     />
                   </div>
@@ -122,7 +154,7 @@ export default function ApplyPage() {
                       id="email"
                       name="email"
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#C52233]"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
                       placeholder="ivan@example.com"
                     />
                   </div>
@@ -175,6 +207,7 @@ export default function ApplyPage() {
                   </div>
                 </div>
                 
+              )}
                 {/* Submit Button */}
                 <div>
                   <Button type="submit" fullWidth>

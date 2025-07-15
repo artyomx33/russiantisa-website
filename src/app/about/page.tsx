@@ -6,7 +6,7 @@ import Button from '@/components/Button';
 
 export default function AboutPage() {
   return (
-    <main className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative w-full bg-gray-50 py-16 px-4 md:py-24">
         <div className="container mx-auto max-w-6xl">
@@ -21,13 +21,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission Statement Section */}
+      {/* Vision & Mission Statement Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeader 
-                title="Наша миссия"
+                title="Наше видение"
                 subtitle="Мы стремимся сохранить русский язык и культуру для детей, живущих за рубежом"
                 centered={false}
               />
@@ -38,26 +38,26 @@ export default function AboutPage() {
               </p>
               <ul className="mt-4 space-y-2 text-gray-700">
                 <li className="flex items-start">
-                  <span className="text-[#C52233] mr-2">•</span>
+                  <span className="text-gold mr-2">•</span>
                   <span>Свободно говорить, читать и писать на русском языке</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C52233] mr-2">•</span>
+                  <span className="text-gold mr-2">•</span>
                   <span>Познакомиться с богатством русской культуры и традиций</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C52233] mr-2">•</span>
+                  <span className="text-gold mr-2">•</span>
                   <span>Развить лидерские качества и предпринимательское мышление</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C52233] mr-2">•</span>
+                  <span className="text-gold mr-2">•</span>
                   <span>Найти друзей в русскоязычном сообществе Лейдена</span>
                 </li>
               </ul>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden">
               <Image
-                src="https://placehold.co/800x600/C52233/FFFFFF/png?text=Our+Mission"
+                src="https://placehold.co/800x600/C9A83D/FFFFFF/png?text=Our+Vision"
                 alt="Дети изучают русский язык"
                 fill
                 className="object-cover"
@@ -67,18 +67,60 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TISA Method Section */}
+      {/* Values Section */}
       <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <SectionHeader 
+            title="Наши ценности"
+            subtitle="Принципы, которыми мы руководствуемся в нашей работе"
+          />
+          
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold flex items-center justify-center text-white text-2xl font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-bold mb-3">Уважение к языку</h3>
+              <p className="text-gray-700">
+                Мы относимся к русскому языку как к ценному наследию, которое нужно бережно передавать следующим поколениям.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold flex items-center justify-center text-white text-2xl font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-bold mb-3">Творческий подход</h3>
+              <p className="text-gray-700">
+                Мы верим, что обучение должно быть увлекательным и вдохновляющим процессом, который развивает творческое мышление.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold flex items-center justify-center text-white text-2xl font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-bold mb-3">Сообщество</h3>
+              <p className="text-gray-700">
+                Мы создаем дружную среду, где дети и родители чувствуют себя частью большой семьи, объединенной русским языком и культурой.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TISA Method Section */}
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <SectionHeader 
             title="Метод TISA"
             subtitle="Как мы адаптировали предпринимательский подход TISA для изучения русского языка"
           />
           
-          <div className="mt-12 bg-white p-8 rounded-lg shadow-sm">
+          <div className="mt-12 bg-gray-50 p-8 rounded-lg shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center p-6">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#C52233] flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold flex items-center justify-center text-white text-2xl font-bold">
                   1
                 </div>
                 <h3 className="text-xl font-bold mb-3">Практическое обучение</h3>
@@ -89,7 +131,7 @@ export default function AboutPage() {
               </div>
               
               <div className="text-center p-6">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#C52233] flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold flex items-center justify-center text-white text-2xl font-bold">
                   2
                 </div>
                 <h3 className="text-xl font-bold mb-3">Командная работа</h3>
@@ -100,7 +142,7 @@ export default function AboutPage() {
               </div>
               
               <div className="text-center p-6">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#C52233] flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold flex items-center justify-center text-white text-2xl font-bold">
                   3
                 </div>
                 <h3 className="text-xl font-bold mb-3">Культурный контекст</h3>
@@ -124,34 +166,60 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Teacher Bios Section */}
+      {/* Leadership Team Section */}
+      <section id="team" className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <SectionHeader 
+            title="Руководство школы"
+            subtitle="Познакомьтесь с основателями Russian TISA"
+          />
+          
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TeacherCard
+              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Karina"
+              name="Карина Медведева"
+              title="Сооснователь и публичный спикер"
+              bio="Вдохновитель проекта, определяет видение школы, проводит выступления и организует праздники. Карина верит, что русский язык — это не только средство общения, но и ключ к богатому культурному наследию."
+            />
+            
+            <TeacherCard
+              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Ekaterina"
+              name="Екатерина"
+              title="Директор школы"
+              bio="Руководит повседневной работой школы и образовательным процессом. Профессиональный педагог с многолетним опытом, Екатерина создает эффективную и вдохновляющую образовательную среду для детей всех возрастов."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Teacher Team Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <SectionHeader 
             title="Наши преподаватели"
-            subtitle="Познакомьтесь с командой профессионалов, которые делают Russian TISA особенной"
+            subtitle="Профессионалы, которые делают Russian TISA особенной"
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <TeacherCard
-              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Teacher+1"
-              name="Анна Иванова"
-              title="Основатель и главный преподаватель"
-              bio="Профессиональный педагог с 15-летним опытом преподавания русского языка. Окончила филологический факультет МГУ, имеет международные сертификаты по методике преподавания РКИ. Анна создала уникальную методику, которая делает обучение увлекательным и эффективным."
+              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Maria"
+              name="Мария Петрова"
+              title="Преподаватель"
+              bio="Опытный педагог русского языка и литературы. Работает с детьми разных возрастов, создает увлекательные уроки, которые развивают не только языковые навыки, но и творческое мышление."
             />
             
             <TeacherCard
-              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Teacher+2"
-              name="Михаил Петров"
-              title="Преподаватель литературы и истории"
-              bio="Историк по образованию, писатель и журналист. Более 10 лет преподает русскую литературу и историю детям разных возрастов. Автор нескольких книг для детей о русской культуре. Михаил умеет превращать сложные темы в увлекательные истории."
+              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Elena"
+              name="Елена Васильева"
+              title="Преподаватель младшей группы"
+              bio="Специалист по раннему развитию, создает игровую среду для самых маленьких учеников. Елена помогает детям полюбить русский язык через игры, песни и творческие занятия."
             />
             
             <TeacherCard
-              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Teacher+3"
-              name="Елена Смирнова"
-              title="Преподаватель для младших групп"
-              bio="Педагог дошкольного образования с опытом работы более 8 лет. Специализируется на раннем языковом развитии. Елена создает игровую среду, где самые маленькие ученики с удовольствием погружаются в мир русского языка через песни, игры и творчество."
+              image="https://placehold.co/400x400/C9A83D/FFFFFF/png?text=Natalia"
+              name="Наталья Кузнецова"
+              title="Преподаватель старшей группы"
+              bio="Филолог с богатым опытом преподавания. Наталья работает со старшими детьми, помогая им углубить знание русского языка, литературы и культуры через исследовательские проекты и дискуссии."
             />
           </div>
           
@@ -172,10 +240,10 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 px-4 bg-gray-100">
+      <section className="py-12 px-4 bg-gold text-white">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-2xl font-bold mb-6">Хотите узнать больше о нашей школе?</h2>
-          <Button>Записаться на пробное занятие</Button>
+          <Button variant="secondary">Записаться на пробное занятие</Button>
         </div>
       </section>
     </main>

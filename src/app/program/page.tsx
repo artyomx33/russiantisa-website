@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export default function ProgramPage() {
   return (
-    <main className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative w-full bg-gray-50 py-16 px-4 md:py-24">
         <div className="container mx-auto max-w-6xl">
